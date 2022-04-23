@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+#btn_custom{
+  background-color: red;
+}
+
+/* .App .btn_custom {
+  background-color: red ;
+} */
+
+.App > div{
+  
+}
