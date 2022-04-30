@@ -13,11 +13,11 @@ import NavigationComponent from './components/Navigation';
 
 function App() {
 
-  // const popupMethod = (data) => {
-  //   console.log(data, '****')
-  //   let demo = 'ddddd';
-  //   return alert(`hello world ${data} ${demo} name`);
-  // }
+  const popupMethod = (data) => {
+    console.log(data, '****')
+    let demo = 'ddddd';
+    return alert(`hello world ${data} ${demo} name`);
+  }
 
   return (
     <div className="App" >
