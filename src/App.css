@@ -45,6 +45,12 @@
   background-color: red ;
 } */
 
-.App > div{
+/* .App > div{
   
+} */
+
+
+ .MuiInputBase-formControl {
+  border-radius: 50px !important;
 }
+/* .MuiOutlinedInput-root .MuiInputBase-root .MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root */

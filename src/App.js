@@ -2,7 +2,14 @@
 // import { Button } from '@mui/material';
 // import TemporaryDrawer from './components/example1';
 import ExampleComponent from './components/example2';
+import ExampleComponent2 from './components/example3';
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
+
 import './App.css';
+import NavigationComponent from './components/Navigation';
 
 function App() {
 
@@ -14,28 +21,16 @@ function App() {
 
   return (
     <div className="App" >
-      {/* <header className="App-header">
-        <TemporaryDrawer />
-        <p style={{ color: 'red', textAlign: 'center' }}>test</p>
-
-        <Button variant="contained" id='btn_custom' className='btn_custom' onClick={() => window.location.reload()}>Contained</Button>
-
-      </header> */}
-      <ExampleComponent value={'world'} name='test' newMethod={popupMethod}>
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <div style={{ border: '1px solid red', padding: '1rem' }}></div>
-          <div style={{ border: '1px solid red', padding: '1rem' }}></div>
-          <div style={{ border: '1px solid red', padding: '1rem' }}></div>
-        </div>
-      </ExampleComponent>
-      {/* <ExampleComponent value={'world 1'} name='test 1' >
-        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <div style={{ border: '1px solid red', padding: '1rem' }}></div>
-          <div style={{ border: '1px solid red', padding: '1rem' }}></div>
-        </div>
-      </ExampleComponent>
-      <ExampleComponent value={'world 2'} name='test 2' />
-      <ExampleComponent value={'world 3'} name='test 3' /> */}
+      {/* <ExampleComponent value={'world'} name='test' newMethod={popupMethod} />
+      <ExampleComponent2 value={'world'} name='test' newMethod={popupMethod} /> */}
+      <NavigationComponent />
+      <Routes>
+        <Route exact path="/" element={<ExampleComponent />} />
+        <Route exact path="/about" element={<ExampleComponent2 />} />
+        {/* <Route exact path="/contacts" element={<ExampleComponent />} /> */}
+        <Route exact path="/services" element={<ExampleComponent2 />} />
+        {/* </Route> */}
+      </Routes>
     </div>
   );
 }

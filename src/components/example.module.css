@@ -1,0 +1,10 @@
+.demo1{
+    /* display: flex; */
+    border: 1px solid red;
+    padding:10px;
+}
+
+.demo2{
+    padding: 15px;
+    border: 1px solid blue;
+}
